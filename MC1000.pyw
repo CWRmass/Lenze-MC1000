@@ -13,28 +13,28 @@ except ImportError:
 param_dict = {
     51: {"param_num": 0, "name": "Line Volts", "unit": None, "scale": 1,
          "map": {0: "High", 1: "Low", 2: "Auto"}},
-    52:  {"param_num": 1,  "name": "Speed #1",             "unit": "Hz",   "scale": 100},
-    53:  {"param_num": 2,  "name": "Speed #2",             "unit": "Hz",   "scale": 100},
-    54:  {"param_num": 3,  "name": "Speed #3",             "unit": "Hz",   "scale": 100},
-    55:  {"param_num": 4,  "name": "Speed #4",             "unit": "Hz",   "scale": 100},
-    56:  {"param_num": 5,  "name": "Skip Freq #1",         "unit": "Hz",   "scale": 100},
-    57:  {"param_num": 6,  "name": "Skip Freq #2",         "unit": "Hz",   "scale": 100},
-    58:  {"param_num": 7,  "name": "Band Width",           "unit": "Hz",   "scale": 100},
-    59:  {"param_num": 8,  "name": "Acceleration",         "unit": "sec",  "scale": 10},
-    60:  {"param_num": 9,  "name": "Deceleration",         "unit": "sec",  "scale": 10},
-    61:  {"param_num": 10, "name": "Minimum Frequency",    "unit": "Hz",   "scale": 100},
-    62:  {"param_num": 11, "name": "Maximum Frequency",    "unit": "Hz",   "scale": 100},
-    63:  {"param_num": 12, "name": "DC Brake Voltage",     "unit": "VDC",  "scale": 1},
-    64:  {"param_num": 13, "name": "DC Brake Time",        "unit": "sec",  "scale": 10},
+    52: {"param_num": 1, "name": "Speed #1", "unit": "Hz", "scale": 100},
+    53: {"param_num": 2, "name": "Speed #2", "unit": "Hz", "scale": 100},
+    54: {"param_num": 3, "name": "Speed #3", "unit": "Hz", "scale": 100},
+    55: {"param_num": 4, "name": "Speed #4", "unit": "Hz", "scale": 100},
+    56: {"param_num": 5, "name": "Skip Freq #1", "unit": "Hz", "scale": 100},
+    57: {"param_num": 6, "name": "Skip Freq #2", "unit": "Hz", "scale": 100},
+    58: {"param_num": 7, "name": "Band Width", "unit": "Hz", "scale": 100},
+    59: {"param_num": 8, "name": "Acceleration", "unit": "sec", "scale": 10},
+    60: {"param_num": 9, "name": "Deceleration", "unit": "sec", "scale": 10},
+    61: {"param_num": 10, "name": "Minimum Frequency", "unit": "Hz", "scale": 100},
+    62: {"param_num": 11, "name": "Maximum Frequency", "unit": "Hz", "scale": 100},
+    63: {"param_num": 12, "name": "DC Brake Voltage", "unit": "VDC", "scale": 1},
+    64: {"param_num": 13, "name": "DC Brake Time", "unit": "sec", "scale": 10},
     65: {"param_num": 14, "name": "Dynamic Brake", "unit": None, "scale": 1,
          "map": {0: "Off", 1: "On"}},
-    66:  {"param_num": 15, "name": "Reserved",             "unit": None,   "scale": 1},
-    67:  {"param_num": 16, "name": "Current Limit",        "unit": "%",    "scale": 1},
-    68:  {"param_num": 17, "name": "Motor Overload",       "unit": "%",    "scale": 1},
-    69:  {"param_num": 18, "name": "Base Frequency",       "unit": "Hz",   "scale": 100},
-    70:  {"param_num": 19, "name": "Flux Boost",           "unit": "%",    "scale": 100},
-    71:  {"param_num": 20, "name": "AC Boost",             "unit": "%",    "scale": 100},
-    72:  {"param_num": 21, "name": "Slip Compensation",    "unit": "%",    "scale": 100},
+    66: {"param_num": 15, "name": "Reserved", "unit": None, "scale": 1},
+    67: {"param_num": 16, "name": "Current Limit", "unit": "%", "scale": 1},
+    68: {"param_num": 17, "name": "Motor Overload", "unit": "%", "scale": 1},
+    69: {"param_num": 18, "name": "Base Frequency", "unit": "Hz", "scale": 100},
+    70: {"param_num": 19, "name": "Flux Boost", "unit": "%", "scale": 100},
+    71: {"param_num": 20, "name": "AC Boost", "unit": "%", "scale": 100},
+    72: {"param_num": 21, "name": "Slip Compensation", "unit": "%", "scale": 100},
     73: {"param_num": 22, "name": "Torque Mode", "unit": None, "scale": 1,
          "map": {0: "Constant", 1: "Variable", 2: "CT/NOCMP"}},
 
@@ -42,7 +42,7 @@ param_dict = {
          "map": {0: "2.5 kHz", 1: "6 kHz", 2: "8 kHz",
                  3: "10 kHz", 4: "12 kHz", 5: "14 kHz"}},
 
-    75:  {"param_num": 24, "name": "Reserved",             "unit": None,   "scale": 1},
+    75: {"param_num": 24, "name": "Reserved", "unit": None, "scale": 1},
     76: {"param_num": 25, "name": "Start Mode", "unit": None, "scale": 1,
          "map": {0: "Normal", 1: "Power-Up", 2: "Auto Restart", 3: "Re-Brake"}},
 
@@ -67,61 +67,123 @@ param_dict = {
                  6: "GPH", 7: "None", 8: "%", 9: "PSI", 10: "FPM", 11: "CFM",
                  12: "GPM", 13: "IN", 14: "FT", 15: "/SEC", 16: "/MIN",
                  17: "/HR", 18: "F", 19: "C", 20: "MPM", 21: "GPH"}},
-    83:  {"param_num": 32, "name": "Hz Multiplier",        "unit": None,   "scale": 100},
+    83: {"param_num": 32, "name": "Hz Multiplier", "unit": None, "scale": 100},
     84: {"param_num": 33, "name": "Speed Display DP", "unit": None, "scale": 1,
          "map": {0: "XXXXX", 1: "XXX.X", 2: "XX.XX", 3: "X.XXX", 4: ".XXXX"}},
-    85:  {"param_num": 34, "name": "Load Multiplier",      "unit": "%",    "scale": 1},
-    86:  {"param_num": 35, "name": "Display Contrast",     "unit": None,   "scale": 1},
-    87:  {"param_num": 36, "name": "Sleep Threshold",      "unit": "Hz",   "scale": 100},
-    88:  {"param_num": 37, "name": "Sleep Delay",          "unit": "sec",  "scale": 10},
-    89:  {"param_num": 38, "name": "Sleep Bandwidth",      "unit": None,   "scale": 1},
-    90:  {"param_num": 39, "name": "TB5 Min",              "unit": "Hz",   "scale": 100},
-    91:  {"param_num": 40, "name": "TB5 Max",              "unit": "Hz",   "scale": 100},
-    92:  {"param_num": 41, "name": "Analog In Filter",     "unit": "sec",  "scale": 100},
-    93:  {"param_num": 42, "name": "TB10A Output",         "unit": None,   "scale": 1},
-    94:  {"param_num": 43, "name": "@TB10A Freq",          "unit": "Hz",   "scale": 100},
-    95:  {"param_num": 44, "name": "TB10B Output",         "unit": None,   "scale": 1},
-    96:  {"param_num": 45, "name": "@TB10B %",             "unit": "%",    "scale": 1},
-    97:  {"param_num": 46, "name": "Reserved",             "unit": None,   "scale": 1},
-    98:  {"param_num": 47, "name": "TB13A Input",          "unit": None,   "scale": 1},
-    99:  {"param_num": 48, "name": "TB13B Input",          "unit": None,   "scale": 1},
-    100: {"param_num": 49, "name": "TB13C Input",          "unit": None,   "scale": 1},
-    101: {"param_num": 50, "name": "TB13D Input",          "unit": None,   "scale": 1},
-    102: {"param_num": 51, "name": "Reserved",             "unit": None,   "scale": 1},
-    103: {"param_num": 52, "name": "TB14 Output",          "unit": None,   "scale": 1},
-    104: {"param_num": 53, "name": "TB15 Output",          "unit": None,   "scale": 1},
-    105: {"param_num": 54, "name": "Relay Output",         "unit": None,   "scale": 1},
-    106: {"param_num": 55, "name": "TB5B Loss Action",     "unit": None,   "scale": 1},
-    107: {"param_num": 56, "name": "Reserved",             "unit": None,   "scale": 1},
-    108: {"param_num": 57, "name": "Serial Link",          "unit": None,   "scale": 1},
-    109: {"param_num": 58, "name": "Drive Address",        "unit": None,   "scale": 1},
-    110: {"param_num": 59, "name": "Reserved",             "unit": None,   "scale": 1},
-    111: {"param_num": 60, "name": "Reserved",             "unit": None,   "scale": 1},
-    112: {"param_num": 61, "name": "Password",             "unit": None,   "scale": 1},
-    113: {"param_num": 62, "name": "Reserved",             "unit": None,   "scale": 1},
-    114: {"param_num": 63, "name": "Software Version",     "unit": None,   "scale": 1,
+    85: {"param_num": 34, "name": "Load Multiplier", "unit": "%", "scale": 1},
+    86: {"param_num": 35, "name": "Display Contrast", "unit": None, "scale": 1},
+    87: {"param_num": 36, "name": "Sleep Threshold", "unit": "Hz", "scale": 100},
+    88: {"param_num": 37, "name": "Sleep Delay", "unit": "Hz", "scale": 10},
+    89: {"param_num": 38, "name": "Sleep Bandwidth", "unit": None, "scale": 1},
+    90: {"param_num": 39, "name": "TB5 Min", "unit": "Hz", "scale": 100},
+    91: {"param_num": 40, "name": "TB5 Max", "unit": "Hz", "scale": 100},
+    92: {"param_num": 41, "name": "Analog In Filter", "unit": "sec", "scale": 100},
+    93: {"param_num": 42, "name": "TB10A Output", "unit": None, "scale": 1},
+    94: {"param_num": 43, "name": "@TB10A Freq", "unit": "Hz", "scale": 100},
+    95: {"param_num": 44, "name": "TB10B Output", "unit": None, "scale": 1},
+    96: {"param_num": 45, "name": "@TB10B %", "unit": "%", "scale": 1},
+    97: {"param_num": 46, "name": "Reserved", "unit": None, "scale": 1},
+    98: {"param_num": 47, "name": "TB13A Input", "unit": None, "scale": 1},
+    99: {"param_num": 48, "name": "TB13B Input", "unit": None, "scale": 1},
+    100: {"param_num": 49, "name": "TB13C Input", "unit": None, "scale": 1},
+    101: {"param_num": 50, "name": "TB13D Input", "unit": None, "scale": 1},
+    102: {"param_num": 51, "name": "Reserved", "unit": None, "scale": 1},
+    103: {"param_num": 52, "name": "TB14 Output", "unit": None, "scale": 1},
+    104: {"param_num": 53, "name": "TB15 Output", "unit": None, "scale": 1},
+    105: {"param_num": 54, "name": "Relay Output", "unit": None, "scale": 1},
+    106: {"param_num": 55, "name": "TB5B Loss Action", "unit": None, "scale": 1},
+    107: {"param_num": 56, "name": "Reserved", "unit": None, "scale": 1},
+    108: {"param_num": 57, "name": "Serial Link", "unit": None, "scale": 1},
+    109: {"param_num": 58, "name": "Drive Address", "unit": None, "scale": 1},
+    110: {"param_num": 59, "name": "Reserved", "unit": None, "scale": 1},
+    111: {"param_num": 60, "name": "Reserved", "unit": None, "scale": 1},
+    112: {"param_num": 61, "name": "Password", "unit": None, "scale": 1},
+    113: {"param_num": 62, "name": "Reserved", "unit": None, "scale": 1},
+    114: {"param_num": 63, "name": "Software Version", "unit": None, "scale": 1,
           "map": {21263: "M108315"}},
-    115: {"param_num": 64, "name": "Monitor Enable",       "unit": None,   "scale": 1},
-    116: {"param_num": 65, "name": "Program Reset",        "unit": None,   "scale": 1},
-    117: {"param_num": 66, "name": "History Reset",        "unit": None,   "scale": 1},
-    118: {"param_num": 67, "name": "Reserved",             "unit": None,   "scale": 1},
-    119: {"param_num": 68, "name": "Reserved",             "unit": None,   "scale": 1},
-    120: {"param_num": 69, "name": "Language",             "unit": None,   "scale": 1},
-    121: {"param_num": 70, "name": "PID Mode",             "unit": None,   "scale": 1},
-    122: {"param_num": 71, "name": "Reserved",             "unit": None,   "scale": 1},
-    123: {"param_num": 72, "name": "Reserved",             "unit": None,   "scale": 1},
-    124: {"param_num": 73, "name": "Reserved",             "unit": None,   "scale": 1},
-    125: {"param_num": 74, "name": "PID Feedback Source",  "unit": None,   "scale": 1},
-    126: {"param_num": 75, "name": "PID FB @ MIN",         "unit": "%",    "scale": 1},
-    127: {"param_num": 76, "name": "PID FB @ MAX",         "unit": "%",    "scale": 1},
-    128: {"param_num": 77, "name": "Reserved",             "unit": None,   "scale": 1},
-    129: {"param_num": 78, "name": "PID I Gain",           "unit": "sec",  "scale": 10},
-    130: {"param_num": 79, "name": "PID D Gain",           "unit": "sec",  "scale": 10},
-    131: {"param_num": 80, "name": "PID Accel",            "unit": "sec",  "scale": 10},
-    132: {"param_num": 81, "name": "PID Min Alarm",        "unit": "%",    "scale": 1},
-    133: {"param_num": 82, "name": "PID Max Alarm",        "unit": "%",    "scale": 1},
+    115: {"param_num": 64, "name": "Monitor Enable", "unit": None, "scale": 1},
+    116: {"param_num": 65, "name": "Program Reset", "unit": None, "scale": 1},
+    117: {"param_num": 66, "name": "History Reset", "unit": None, "scale": 1},
+    118: {"param_num": 67, "name": "Reserved", "unit": None, "scale": 1},
+    119: {"param_num": 68, "name": "Reserved", "unit": None, "scale": 1},
+    120: {"param_num": 69, "name": "Language", "unit": None, "scale": 1},
+    121: {"param_num": 70, "name": "PID Mode", "unit": None, "scale": 1},
+    122: {"param_num": 71, "name": "Reserved", "unit": None, "scale": 1},
+    123: {"param_num": 72, "name": "Reserved", "unit": None, "scale": 1},
+    124: {"param_num": 73, "name": "Reserved", "unit": None, "scale": 1},
+    125: {"param_num": 74, "name": "PID Feedback Source", "unit": None, "scale": 1},
+    126: {"param_num": 75, "name": "PID FB @ MIN", "unit": "%", "scale": 1},
+    127: {"param_num": 76, "name": "PID FB @ MAX", "unit": "%", "scale": 1},
+    128: {"param_num": 77, "name": "Reserved", "unit": None, "scale": 1},
+    129: {"param_num": 78, "name": "PID I Gain", "unit": "sec", "scale": 10},
+    130: {"param_num": 79, "name": "PID D Gain", "unit": "sec", "scale": 10},
+    131: {"param_num": 80, "name": "PID Accel", "unit": "sec", "scale": 10},
+    132: {"param_num": 81, "name": "PID Min Alarm", "unit": "%", "scale": 1},
+    133: {"param_num": 82, "name": "PID Max Alarm", "unit": "%", "scale": 1},
     # 134–150 are mostly reserved or view-only (software/fault history)
 }
+# Factory default register values (raw Modbus representation)
+factory_defaults = {
+    51: 2,  # Line Volts → Auto
+    52: 2000,  # Speed #1 = 20.00 Hz
+    53: 2000,  # Speed #2 = 20.00 Hz
+    54: 2000,  # Speed #3 = 20.00 Hz
+    55: 2000,  # Speed #4 = 20.00 Hz
+    56: 0,  # Skip #1
+    57: 0,  # Skip #2
+    58: 100,  # Bandwidth
+    59: 300,  # Accel = 30.0 sec (scale=10)
+    60: 300,  # Decel = 30.0 sec (scale=10)
+    61: 50,  # Min Freq = 0.50 Hz
+    62: 6000,  # Max Freq = 60.00 Hz
+    63: 0,  # DC Brake Voltage = 0
+    64: 0,  # DC Brake Time = 0.0 sec
+    65: 0,  # Dynamic Brake = Disabled
+    67: 180,  # Current Limit = 180 %
+    68: 100,  # Motor Overload = 100 %
+    69: 6000,  # Base Frequency = 60.00 Hz
+    70: 100,  # Flux Boost = 1.00 %
+    71: 0,  # AC Boost = 0
+    72: 0,  # Slip Compensation = 0
+    74: 0,  # Carrier Freq = 2.5 kHz (default)
+    76: 0,  # Start Mode = Normal
+    77: 1,  # Stop Mode = Coast
+    78: 0,  # Rotation = Forward
+    79: 0,  # Auto/Manual = Both
+    80: 0,  # Manual Source = Keypad
+    81: 0,  # Control = Local
+    82: 0,  # Units = Hertz
+    83: 100,  # Hz Multiplier = 1.00
+    84: 0,  # Speed Display Format = XXXXX
+    85: 100,  # Load Multiplier = 100 %
+    87: 0,  # Sleep Threshold = 0.00 Hz
+    88: 3000,  # Sleep Delay = 30.00 hz
+    89: 0,  # Sleep Bandwidth = 0
+    90: 0,  # TB5 Min = 0 (.00 Hz)
+    91: 0,  # TB5 Max = 0 (.00 Hz)
+    92: 2,  # Analog In Filter = 0.02 sec (raw 2, scale .01 sec)
+    93: 0,  # TB10A Output = 00 -> None
+    94: 6000,  # @TB10A Freq = 60.00 Hz (raw 6000)
+    95: 0,  # TB10B Output = 00 -> None
+    96: 125,  # @TB10B % = 125 (%) (raw 125)
+    98: 0,  # TB13A Input = 00 -> None
+    99: 0,  # TB13B Input = 00 -> None
+    100: 0,  # TB13C Input = 00 -> None
+    101: 0,  # TB13D Input = 00 -> EXT Fault (default)
+    103: 0,  # TB14 Output = 00 -> None
+    104: 0,  # TB15 Output = 00 -> None
+    105: 0,  # Relay Output = 00 -> None
+    106: 0,  # TB5B Loss Action = 00 -> Fault
+    108: 2,  # SERIAL = 00 -> Enabled w/o Timer (normally is 0 =disabled but keeping serial at 2 since we are
+    # using it lol)
+    109: 30,  # ADDRESS = 30 (factory example in manual)
+    112: 19,  # PASSWORD = 0019 (raw 19)
+    115: 1,  # MONITOR = 01 -> ON
+    125: 0,  # PID Feedback Source = 00 -> TB-5A (default)
+    130: 0,  # PID D Gain = 0.0 sec (raw 0)
+    150: 0,  # LANGUAGE = 0 -> English (default)
+}
+
 
 # --- MC1000 minimal terminal GUI ---
 class MCConsole:
@@ -169,7 +231,8 @@ class MCConsole:
         ctrl_frame.pack(padx=5, pady=5, fill="x")
 
         ttk.Button(ctrl_frame, text="Unlock (0)", command=lambda: self.write_register(48, 0)).pack(side="left", padx=2)
-        ttk.Button(ctrl_frame, text="Unlock All (1475)", command=lambda: self.write_register(48, 1475)).pack(side="left", padx=2)
+        ttk.Button(ctrl_frame, text="Unlock All (1475)", command=lambda: self.write_register(48, 1475)).pack(
+            side="left", padx=2)
         ttk.Button(ctrl_frame, text="Start", command=lambda: self.write_register(1, 0x0008)).pack(side="left", padx=2)
         ttk.Button(ctrl_frame, text="Stop", command=lambda: self.write_register(1, 0x0004)).pack(side="left", padx=2)
         ttk.Button(ctrl_frame, text="Forward", command=lambda: self.write_register(1, 0x0080)).pack(side="left", padx=2)
@@ -239,9 +302,29 @@ class MCConsole:
         bulk_frame.pack(padx=5, pady=5, fill="x")
 
         ttk.Button(bulk_frame, text="Upload", command=self.upload_params).pack(side="left", padx=5,
-                                                                                                 pady=5)
+                                                                               pady=5)
         ttk.Button(bulk_frame, text="Download", command=self.download_params).pack(side="left", padx=5,
-                                                                                                   pady=5)
+                                                                                   pady=5)
+
+        ttk.Button(bulk_frame, text="Factory Defaults", command=self.send_factory_defaults).pack(side="left", padx=5,
+                                                                                                 pady=5)
+
+    def send_factory_defaults(self):
+        if not self.client:
+            self.log("Not connected")
+            return
+        slave = self.slave_var.get()
+        count = 0
+        for reg, raw_val in factory_defaults.items():
+            try:
+                rr = self.client.write_register(reg, raw_val, unit=slave)
+                if rr.isError():
+                    self.log(f"Write error on {reg}")
+                else:
+                    count += 1
+            except Exception as e:
+                self.log(f"Write exception on {reg}: {e}")
+        self.log(f"Sent {count} factory default parameters to drive")
 
     def download_params(self):
         if not self.client:
