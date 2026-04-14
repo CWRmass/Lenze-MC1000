@@ -100,7 +100,7 @@ param_dict = {
     112: {"param_num": 61, "name": "Password", "unit": None, "scale": 1},
     113: {"param_num": 62, "name": "Reserved", "unit": None, "scale": 1},
     114: {"param_num": 63, "name": "Software Version", "unit": None, "scale": 1,
-          "map": {21263: "M108315"}},
+          "map": {21263: "M108315", 21261: "M108313"}},
     115: {"param_num": 64, "name": "Monitor Enable", "unit": None, "scale": 1},
     116: {"param_num": 65, "name": "Program Reset", "unit": None, "scale": 1},
     117: {"param_num": 66, "name": "History Reset", "unit": None, "scale": 1},
